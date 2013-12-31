@@ -162,8 +162,6 @@ module Mongoid
 
         selectors << {field_offsets.to_a.first.first => nil} unless field_offsets.empty?
 
-        raise selectors.inspect
-
         # TODO: Fix for null fields
         # [{"app.releaseStage"=>"development", "_id"=>{"$lt"=>"52a26631bc3b18cad800003f"}}, {"app.releaseStage"=>{"$lt"=>"development"}}]
 
